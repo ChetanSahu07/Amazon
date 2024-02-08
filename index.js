@@ -37,10 +37,14 @@ async function fun(st){
 }
 
 async function solve(){
-    let b = await fun("<p> Reading Your Files")
+    let b = await fun("<p> Reading ")
+    dv.innerHTML = dv.innerHTML + b ; 
+    b = await fun("Your File ")
     dv.innerHTML = dv.innerHTML + b ; 
     await adddots();
-    b = await fun("<br><p>Initializing Hacking</p>");
+    b = await fun("<br><p>Initializing ");
+    dv.innerHTML = dv.innerHTML + b ; 
+    b = await fun("Hacking</p> ")
     dv.innerHTML = dv.innerHTML + b ; 
     await adddots();
     b = await fun("<br><p>PassWord Files Detected</p>");
